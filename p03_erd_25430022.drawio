@@ -1,0 +1,201 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="K0Rg4Dura2G7LZjwhcZB">
+    <mxGraphModel dx="1266" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="judul" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" value="ERD Perpustakaan Cendekia WFR" vertex="1">
+          <mxGeometry height="30" width="780" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota" parent="1" style="swimlane;fontStyle=1;startSize=30;collapsible=0;fontSize=14;fillColor=#6B4FA0;fontColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#333333;" value="anggota" vertex="1">
+          <mxGeometry height="222" width="260" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota_0" parent="anggota" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;fontStyle=1;" value="PK id_anggota" vertex="1">
+          <mxGeometry height="24" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota_1" parent="anggota" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="UQ no_anggota" vertex="1">
+          <mxGeometry height="24" width="260" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota_2" parent="anggota" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="UQ nim_anggota" vertex="1">
+          <mxGeometry height="24" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota_3" parent="anggota" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="nama_anggota" vertex="1">
+          <mxGeometry height="24" width="260" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota_4" parent="anggota" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="prodi_anggota" vertex="1">
+          <mxGeometry height="24" width="260" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota_5" parent="anggota" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="no_hp_anggota &lt;font color=&quot;#C62828&quot;&gt;&lt;i&gt;(data pribadi)&lt;/i&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="24" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota_6" parent="anggota" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="status_anggota" vertex="1">
+          <mxGeometry height="24" width="260" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="anggota_7" parent="anggota" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="tgl_daftar_anggota" vertex="1">
+          <mxGeometry height="24" width="260" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="peminjaman" parent="1" style="swimlane;fontStyle=1;startSize=30;collapsible=0;fontSize=14;fillColor=#2E7D32;fontColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#333333;" value="peminjaman" vertex="1">
+          <mxGeometry height="174" width="260" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="peminjaman_0" parent="peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;fontStyle=1;" value="PK id_peminjaman" vertex="1">
+          <mxGeometry height="24" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="peminjaman_1" parent="peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="UQ no_slip_peminjaman" vertex="1">
+          <mxGeometry height="24" width="260" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="peminjaman_2" parent="peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="tgl_peminjaman" vertex="1">
+          <mxGeometry height="24" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="peminjaman_3" parent="peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="tgl_jatuh_tempo_peminjaman" vertex="1">
+          <mxGeometry height="24" width="260" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="peminjaman_4" parent="peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="FK id_petugas" vertex="1">
+          <mxGeometry height="24" width="260" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="peminjaman_5" parent="peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="FK id_anggota" vertex="1">
+          <mxGeometry height="24" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="detail_peminjaman" parent="1" style="swimlane;fontStyle=1;startSize=30;collapsible=0;fontSize=14;fillColor=#B7791F;fontColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#333333;" value="detail_peminjaman" vertex="1">
+          <mxGeometry height="126" width="260" x="40" y="654" as="geometry" />
+        </mxCell>
+        <mxCell id="detail_peminjaman_0" parent="detail_peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;fontStyle=1;" value="PK,FK id_peminjaman" vertex="1">
+          <mxGeometry height="24" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="detail_peminjaman_1" parent="detail_peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;fontStyle=1;" value="PK,FK id_eksemplar" vertex="1">
+          <mxGeometry height="24" width="260" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="detail_peminjaman_2" parent="detail_peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="tgl_kembali_detail_peminjaman &lt;font color=&quot;#C2185B&quot;&gt;&lt;i&gt;(baru)&lt;/i&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="24" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="detail_peminjaman_3" parent="detail_peminjaman" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="denda_detail_peminjaman &lt;font color=&quot;#C2185B&quot;&gt;&lt;i&gt;(turunan)&lt;/i&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="24" width="260" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="petugas" parent="1" style="swimlane;fontStyle=1;startSize=30;collapsible=0;fontSize=14;fillColor=#1F4E8C;fontColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#333333;" value="petugas" vertex="1">
+          <mxGeometry height="126" width="260" x="560" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="petugas_0" parent="petugas" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;fontStyle=1;" value="PK id_petugas" vertex="1">
+          <mxGeometry height="24" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="petugas_1" parent="petugas" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="UQ kode_petugas" vertex="1">
+          <mxGeometry height="24" width="260" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="petugas_2" parent="petugas" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="nama_petugas" vertex="1">
+          <mxGeometry height="24" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="petugas_3" parent="petugas" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="peran_petugas" vertex="1">
+          <mxGeometry height="24" width="260" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="buku" parent="1" style="swimlane;fontStyle=1;startSize=30;collapsible=0;fontSize=14;fillColor=#C2571A;fontColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#333333;" value="buku" vertex="1">
+          <mxGeometry height="150" width="260" x="560" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="buku_0" parent="buku" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;fontStyle=1;" value="PK id_buku" vertex="1">
+          <mxGeometry height="24" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="buku_1" parent="buku" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="UQ kode_buku" vertex="1">
+          <mxGeometry height="24" width="260" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="buku_2" parent="buku" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="judul_buku" vertex="1">
+          <mxGeometry height="24" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="buku_3" parent="buku" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="kategori_buku" vertex="1">
+          <mxGeometry height="24" width="260" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="buku_4" parent="buku" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="harga_buku" vertex="1">
+          <mxGeometry height="24" width="260" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="eksemplar" parent="1" style="swimlane;fontStyle=1;startSize=30;collapsible=0;fontSize=14;fillColor=#0F766E;fontColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#333333;" value="eksemplar" vertex="1">
+          <mxGeometry height="150" width="260" x="560" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="eksemplar_0" parent="eksemplar" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;fontStyle=1;" value="PK id_eksemplar" vertex="1">
+          <mxGeometry height="24" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eksemplar_1" parent="eksemplar" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="UQ no_eksemplar" vertex="1">
+          <mxGeometry height="24" width="260" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="eksemplar_2" parent="eksemplar" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="FK id_buku" vertex="1">
+          <mxGeometry height="24" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="eksemplar_3" parent="eksemplar" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="kondisi_eksemplar" vertex="1">
+          <mxGeometry height="24" width="260" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="eksemplar_4" parent="eksemplar" style="text;html=1;align=left;spacingLeft=8;overflow=hidden;fontSize=12;fontColor=#000000;" value="status_eksemplar" vertex="1">
+          <mxGeometry height="24" width="260" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="ket" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;dashed=1;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;strokeColor=#666666;" value="&lt;b&gt;Keterangan&lt;/b&gt; &amp;nbsp; PK = kunci primer &amp;nbsp; FK = kunci tamu &amp;nbsp; UQ = kunci unik &amp;nbsp; PK,FK = kunci primer komposit &amp;nbsp; &lt;b&gt;Kardinalitas&lt;/b&gt; &amp;nbsp; 1 = tepat satu &amp;nbsp; 0..1 = nol atau satu &amp;nbsp; 0..N = nol atau banyak &amp;nbsp; 1..N = satu atau banyak &amp;nbsp; &lt;i&gt;(baru)&lt;/i&gt; = atribut yang belum ada di dokumen p02 dan akan ditambahkan &amp;nbsp; &lt;i&gt;(turunan)&lt;/i&gt; = atribut turunan yang dapat dihitung dari atribut lain; keputusan disimpan atau dihitung ditetapkan di Modul 4.&lt;br&gt;&lt;b&gt;Perhitungan denda:&lt;/b&gt; denda hanya dibuat saat pengembalian (PB-03), sehingga hari terlambat = tgl_kembali_detail_peminjaman − tgl_jatuh_tempo_peminjaman dan denda_detail_peminjaman = tarif denda × hari terlambat (AB-06 dengan P = 5, yaitu Rp5.000 per hari per eksemplar). Keterlambatan berjalan untuk buku yang belum kembali (KI-04) dihitung saat kueri dari tgl_jatuh_tempo_peminjaman terhadap tanggal berjalan, bukan disimpan di denda.&lt;br&gt;&lt;i&gt;Batas maksimal 7 eksemplar per peminjaman (AB-05, P + 2) dan syarat anggota berstatus aktif (AB-02) tidak dapat dinyatakan dalam notasi Crow&#39;s Foot; dijaga sebagai aturan bisnis.&lt;/i&gt;&lt;br&gt;&lt;i&gt;Jumlah eksemplar tersedia (AB-03) tidak disimpan sebagai kolom stok, tetapi dihitung dari status_eksemplar. Tipe data dan constraint belum ditetapkan pada tahap desain konseptual (Modul 5).&lt;/i&gt;" vertex="1">
+          <mxGeometry height="190" width="780" x="40" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="ki" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=6;dashed=1;fontSize=12;fontColor=#000000;fillColor=#FFFFFF;strokeColor=#666666;" value="PENELUSURAN KI → JALUR ERD&lt;br&gt;KI-01 Rekap peminjaman dan pengembalian harian serta bulanan → peminjaman (tgl_peminjaman) → detail_peminjaman (tgl_kembali_detail_peminjaman)&lt;br&gt;KI-02 Lima judul buku paling sering dipinjam per bulan → peminjaman → detail_peminjaman → eksemplar → buku&lt;br&gt;KI-03 Anggota paling aktif meminjam → anggota → peminjaman&lt;br&gt;KI-04 Buku yang melewati jatuh tempo dan belum kembali → anggota → peminjaman → detail_peminjaman → eksemplar → buku&lt;br&gt;KI-05 Riwayat peminjaman berdasarkan NIM atau nomor anggota → anggota → peminjaman → detail_peminjaman → eksemplar → buku" vertex="1">
+          <mxGeometry height="130" width="780" x="40" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="ttd" parent="1" style="text;html=1;align=right;verticalAlign=middle;fontSize=12;fontStyle=2;" value="Wahyu Fadlu Rohman — 25430022 — Kelas A" vertex="1">
+          <mxGeometry height="24" width="360" x="460" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="anggota" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=14;endSize=14;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="peminjaman" value="melakukan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_l0" parent="e1" style="edgeLabel;html=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.5" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1_l1" parent="e1" style="edgeLabel;html=1;" value="0..N" vertex="1">
+          <mxGeometry relative="1" x="0.5" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="petugas" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=14;endSize=14;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="peminjaman" value="mencatat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_l0" parent="e2" style="edgeLabel;html=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_l1" parent="e2" style="edgeLabel;html=1;" value="0..N" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="peminjaman" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERoneToMany;startFill=0;endFill=0;startSize=14;endSize=14;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="detail_peminjaman" value="berisi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_l0" parent="e3" style="edgeLabel;html=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.5" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3_l1" parent="e3" style="edgeLabel;html=1;" value="1..N" vertex="1">
+          <mxGeometry relative="1" x="0.5" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="eksemplar" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=14;endSize=14;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5133;entryX=1;entryY=0.5;" target="detail_peminjaman" value="tercantum di">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_l0" parent="e4" style="edgeLabel;html=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4_l1" parent="e4" style="edgeLabel;html=1;" value="0..N" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="buku" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=14;endSize=14;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="eksemplar" value="memiliki">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_l0" parent="e5" style="edgeLabel;html=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.5" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5_l1" parent="e5" style="edgeLabel;html=1;" value="0..N" vertex="1">
+          <mxGeometry relative="1" x="0.5" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
